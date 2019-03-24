@@ -1,0 +1,3 @@
+.build/							usr/src/DailyPicServer
+terraform/scripts/install.sh	usr/src/DailyPicServer
+terraform/scripts/start.sh		usr/src/DailyPicServer

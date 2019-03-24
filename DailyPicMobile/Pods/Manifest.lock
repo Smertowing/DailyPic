@@ -1,0 +1,46 @@
+PODS:
+  - IBMSwiftCircuitBreaker (5.0.1):
+    - LoggerAPI (~> 1.7)
+  - KituraContracts (1.1.1):
+    - LoggerAPI (~> 1.7)
+  - KituraKit (0.0.22):
+    - KituraContracts (~> 1.1)
+    - SwiftyRequest (~> 2.0)
+  - LoggerAPI (1.8.0)
+  - PryntTrimmerView (3.0.0)
+  - SteviaLayout (4.4.3)
+  - SwiftyRequest (2.0.3):
+    - IBMSwiftCircuitBreaker (~> 5.0)
+    - LoggerAPI (~> 1.7)
+  - YPImagePicker (3.5.3):
+    - PryntTrimmerView (~> 3.0.0)
+    - SteviaLayout (~> 4.4.1)
+
+DEPENDENCIES:
+  - KituraKit
+  - YPImagePicker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IBMSwiftCircuitBreaker
+    - KituraContracts
+    - KituraKit
+    - LoggerAPI
+    - PryntTrimmerView
+    - SteviaLayout
+    - SwiftyRequest
+    - YPImagePicker
+
+SPEC CHECKSUMS:
+  IBMSwiftCircuitBreaker: d85929ca34eeec50bf84760fc07348111d6f4010
+  KituraContracts: 7130a5dc387f42d61e8195e9240df2d085228df1
+  KituraKit: ade24294fcd44fb05cab7402d457a49ca2b3d577
+  LoggerAPI: f371d1fd0fa99d7c973a7b02bc5c65eb245981d2
+  PryntTrimmerView: 53ac64053c7ce63cb3e27f54090f52da0734891d
+  SteviaLayout: ae5ee66101e03607a93c9b3773b84ab7ba7b3d17
+  SwiftyRequest: f333b38331bea503dfba92e95107eadee38d152d
+  YPImagePicker: 5dd3814b47b1208e9c8cc8f6ef77fe90db3723b6
+
+PODFILE CHECKSUM: ccdb992567f54d9bd7b335310a3081a5b93bf416
+
+COCOAPODS: 1.5.3

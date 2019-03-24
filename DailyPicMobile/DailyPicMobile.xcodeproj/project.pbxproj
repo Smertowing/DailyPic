@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC09B0DE422A0B0E1E33A5BF /* Pods_DailyPicMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BB5F90322678D96B0770BD /* Pods_DailyPicMobile.framework */; };
+		F3CF54BF22478EEF00DA16E4 /* EntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54BE22478EEF00DA16E4 /* EntityModel.swift */; };
+		F3CF54C222478F8E00DA16E4 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54C122478F8E00DA16E4 /* DateExtensions.swift */; };
+		F3CF54C422478FDC00DA16E4 /* DailyPicClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54C322478FDC00DA16E4 /* DailyPicClient.swift */; };
+		F3CF54C62247A86500DA16E4 /* EntityModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54C52247A86500DA16E4 /* EntityModelTableViewCell.swift */; };
+		F3CF54C82247A99800DA16E4 /* ModelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54C72247A99800DA16E4 /* ModelsTableViewController.swift */; };
+		F3CF54CA2247AAC900DA16E4 /* AddEntityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54C92247AAC900DA16E4 /* AddEntityViewController.swift */; };
+		F3CF54CC2247AB1800DA16E4 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54CB2247AB1800DA16E4 /* UIKitExtensions.swift */; };
+		F3FCE97E22478AE1006C213B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCE97D22478AE1006C213B /* AppDelegate.swift */; };
+		F3FCE98322478AE1006C213B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FCE98122478AE1006C213B /* Main.storyboard */; };
+		F3FCE98522478AE3006C213B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FCE98422478AE3006C213B /* Assets.xcassets */; };
+		F3FCE98822478AE3006C213B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FCE98622478AE3006C213B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		659CF72BE377A533BBDBB6E3 /* Pods-DailyPicMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPicMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyPicMobile/Pods-DailyPicMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		F3CF54BE22478EEF00DA16E4 /* EntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModel.swift; sourceTree = "<group>"; };
+		F3CF54C122478F8E00DA16E4 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		F3CF54C322478FDC00DA16E4 /* DailyPicClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPicClient.swift; sourceTree = "<group>"; };
+		F3CF54C52247A86500DA16E4 /* EntityModelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityModelTableViewCell.swift; sourceTree = "<group>"; };
+		F3CF54C72247A99800DA16E4 /* ModelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTableViewController.swift; sourceTree = "<group>"; };
+		F3CF54C92247AAC900DA16E4 /* AddEntityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntityViewController.swift; sourceTree = "<group>"; };
+		F3CF54CB2247AB1800DA16E4 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		F3FCE97A22478AE1006C213B /* DailyPicMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPicMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FCE97D22478AE1006C213B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3FCE98222478AE1006C213B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3FCE98422478AE3006C213B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3FCE98722478AE3006C213B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3FCE98922478AE3006C213B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BB5F90322678D96B0770BD /* Pods_DailyPicMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyPicMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE92078ED6FA7B40D020B66 /* Pods-DailyPicMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPicMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyPicMobile/Pods-DailyPicMobile.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3FCE97722478AE1006C213B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC09B0DE422A0B0E1E33A5BF /* Pods_DailyPicMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E0973A07C160CE9C1ABCFAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				659CF72BE377A533BBDBB6E3 /* Pods-DailyPicMobile.debug.xcconfig */,
+				FDE92078ED6FA7B40D020B66 /* Pods-DailyPicMobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68154BCD3CB8D32F2FD98FAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB5F90322678D96B0770BD /* Pods_DailyPicMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3CF54BB22478E7F00DA16E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3FCE98622478AE3006C213B /* LaunchScreen.storyboard */,
+				F3FCE98122478AE1006C213B /* Main.storyboard */,
+				F3CF54C52247A86500DA16E4 /* EntityModelTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3CF54BC22478E9A00DA16E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3FCE97D22478AE1006C213B /* AppDelegate.swift */,
+				F3CF54C72247A99800DA16E4 /* ModelsTableViewController.swift */,
+				F3CF54C92247AAC900DA16E4 /* AddEntityViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F3CF54BD22478EB400DA16E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF54BE22478EEF00DA16E4 /* EntityModel.swift */,
+				F3CF54C322478FDC00DA16E4 /* DailyPicClient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3CF54C022478F7100DA16E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF54C122478F8E00DA16E4 /* DateExtensions.swift */,
+				F3CF54CB2247AB1800DA16E4 /* UIKitExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3FCE97122478AE1006C213B = {
+			isa = PBXGroup;
+			children = (
+				F3FCE97C22478AE1006C213B /* DailyPicMobile */,
+				F3FCE97B22478AE1006C213B /* Products */,
+				4E0973A07C160CE9C1ABCFAD /* Pods */,
+				68154BCD3CB8D32F2FD98FAA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3FCE97B22478AE1006C213B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3FCE97A22478AE1006C213B /* DailyPicMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3FCE97C22478AE1006C213B /* DailyPicMobile */ = {
+			isa = PBXGroup;
+			children = (
+				F3FCE98422478AE3006C213B /* Assets.xcassets */,
+				F3CF54BD22478EB400DA16E4 /* Model */,
+				F3CF54BB22478E7F00DA16E4 /* View */,
+				F3CF54BC22478E9A00DA16E4 /* Controllers */,
+				F3CF54C022478F7100DA16E4 /* Extensions */,
+				F3FCE98922478AE3006C213B /* Info.plist */,
+			);
+			path = DailyPicMobile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3FCE97922478AE1006C213B /* DailyPicMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FCE98C22478AE3006C213B /* Build configuration list for PBXNativeTarget "DailyPicMobile" */;
+			buildPhases = (
+				9CC3B6248C346778F3B9CF16 /* [CP] Check Pods Manifest.lock */,
+				F3FCE97622478AE1006C213B /* Sources */,
+				F3FCE97722478AE1006C213B /* Frameworks */,
+				F3FCE97822478AE1006C213B /* Resources */,
+				8A3F7E7B49B30C42DF54554F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyPicMobile;
+			productName = DailyPicMobile;
+			productReference = F3FCE97A22478AE1006C213B /* DailyPicMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3FCE97222478AE1006C213B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = brakhmen;
+				TargetAttributes = {
+					F3FCE97922478AE1006C213B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F3FCE97522478AE1006C213B /* Build configuration list for PBXProject "DailyPicMobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3FCE97122478AE1006C213B;
+			productRefGroup = F3FCE97B22478AE1006C213B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3FCE97922478AE1006C213B /* DailyPicMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3FCE97822478AE1006C213B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FCE98822478AE3006C213B /* LaunchScreen.storyboard in Resources */,
+				F3FCE98522478AE3006C213B /* Assets.xcassets in Resources */,
+				F3FCE98322478AE1006C213B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A3F7E7B49B30C42DF54554F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DailyPicMobile/Pods-DailyPicMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IBMSwiftCircuitBreaker/CircuitBreaker.framework",
+				"${BUILT_PRODUCTS_DIR}/KituraContracts/KituraContracts.framework",
+				"${BUILT_PRODUCTS_DIR}/KituraKit/KituraKit.framework",
+				"${BUILT_PRODUCTS_DIR}/LoggerAPI/LoggerAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyRequest/SwiftyRequest.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircuitBreaker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KituraContracts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KituraKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LoggerAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRequest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyPicMobile/Pods-DailyPicMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC3B6248C346778F3B9CF16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyPicMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3FCE97622478AE1006C213B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CF54C62247A86500DA16E4 /* EntityModelTableViewCell.swift in Sources */,
+				F3CF54BF22478EEF00DA16E4 /* EntityModel.swift in Sources */,
+				F3CF54CC2247AB1800DA16E4 /* UIKitExtensions.swift in Sources */,
+				F3CF54C422478FDC00DA16E4 /* DailyPicClient.swift in Sources */,
+				F3CF54C222478F8E00DA16E4 /* DateExtensions.swift in Sources */,
+				F3FCE97E22478AE1006C213B /* AppDelegate.swift in Sources */,
+				F3CF54CA2247AAC900DA16E4 /* AddEntityViewController.swift in Sources */,
+				F3CF54C82247A99800DA16E4 /* ModelsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3FCE98122478AE1006C213B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3FCE98222478AE1006C213B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3FCE98622478AE3006C213B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3FCE98722478AE3006C213B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3FCE98A22478AE3006C213B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3FCE98B22478AE3006C213B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3FCE98D22478AE3006C213B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 659CF72BE377A533BBDBB6E3 /* Pods-DailyPicMobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47K9CVZBFJ;
+				INFOPLIST_FILE = DailyPicMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = men.brakh.DailyPicMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3FCE98E22478AE3006C213B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE92078ED6FA7B40D020B66 /* Pods-DailyPicMobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47K9CVZBFJ;
+				INFOPLIST_FILE = DailyPicMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = men.brakh.DailyPicMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3FCE97522478AE1006C213B /* Build configuration list for PBXProject "DailyPicMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FCE98A22478AE3006C213B /* Debug */,
+				F3FCE98B22478AE3006C213B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FCE98C22478AE3006C213B /* Build configuration list for PBXNativeTarget "DailyPicMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FCE98D22478AE3006C213B /* Debug */,
+				F3FCE98E22478AE3006C213B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3FCE97222478AE1006C213B /* Project object */;
+}

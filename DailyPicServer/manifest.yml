@@ -1,0 +1,9 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: DailyPicServer
+  buildpack: swift_buildpack
+  command: "'DailyPicServer'"
+  memory: 128M
+  random-route: true

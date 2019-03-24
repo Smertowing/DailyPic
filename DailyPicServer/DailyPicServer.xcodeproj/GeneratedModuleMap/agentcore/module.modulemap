@@ -1,0 +1,4 @@
+module agentcore {
+    umbrella "/Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/.build/checkouts/omr-agentcore--1664828109329598115/src/agentcore/include"
+    export *
+}
