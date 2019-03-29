@@ -172,6 +172,7 @@
 				TargetAttributes = {
 					F3FCE97922478AE1006C213B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -426,6 +427,7 @@
 			baseConfigurationReference = 659CF72BE377A533BBDBB6E3 /* Pods-DailyPicMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47K9CVZBFJ;
 				INFOPLIST_FILE = DailyPicMobile/Info.plist;
@@ -433,9 +435,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = men.brakh.DailyPicMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = men.brakh.DailyPicMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -445,6 +448,7 @@
 			baseConfigurationReference = FDE92078ED6FA7B40D020B66 /* Pods-DailyPicMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47K9CVZBFJ;
 				INFOPLIST_FILE = DailyPicMobile/Info.plist;
@@ -452,9 +456,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = men.brakh.DailyPicMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = men.brakh.DailyPicMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
