@@ -8,7 +8,7 @@ do {
 
     HeliumLogger.use(LoggerMessageType.info)
 
-    let app = try App()
+    let app = App()
     try app.run()
 
 } catch let error {
