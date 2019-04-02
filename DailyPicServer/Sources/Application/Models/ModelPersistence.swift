@@ -20,11 +20,12 @@ extension EntityModel {
                 var entries = [EntityModel]()
                 for document in documents["rows"].arrayValue {
                     let id = document["id"].stringValue
+                    let edited = document["doc"]["edited"].boolValue
                     let picture = document["doc"]["picture"].stringValue
                     guard let date = document["doc"]["date"].dateTime else {
                         continue
                     }
-                    if let entry = EntityModel(id: id, picture: picture, date: date) {
+                    if let entry = EntityModel(id: id, picture: picture, date: date, edited: edited) {
                         entries.append(entry)
                     }
                 }
@@ -43,6 +44,7 @@ extension EntityModel {
                                                  userInfo: ["localizedDescription": "Duplicate entry"]))
                 }
                 let body = JSON(["picture": entry.picture,
+                                 "edited": entry.edited,
                                  "date": entry.date.iso8601])
                 database.create(body) { id, _, _, error in
                     callback(id, error)
@@ -58,7 +60,7 @@ extension EntityModel {
                 guard let date = document["date"].dateTime else {
                     return callback(nil, error)
                 }
-                guard let entry = EntityModel(id: document["_id"].stringValue, picture: document["picture"].stringValue, date: date) else {
+                guard let entry = EntityModel(id: document["_id"].stringValue, picture: document["picture"].stringValue, date: date, edited: document["edited"].boolValue ) else {
                     return callback(nil, error)
                 }
                 callback(entry, nil)
@@ -76,6 +78,38 @@ extension EntityModel {
                     callback(error)
                 })
             }
+        }
+        
+        static func update(entryWith id: String, with newEntry: EntityModel, from database: Database, callback: @escaping (_ updatedEntry: EntityModel?, _ error: NSError?) -> Void) {
+            database.retrieve(id) { document, error in
+                guard let document = document else {
+                    return callback(nil, NSError(domain: "DailyPic",
+                                                 code: 404,
+                                                 userInfo: ["localizedDescription": "Entity have not found"]))
+                }
+                let id = document["_id"].stringValue
+                let revision = document["_rev"].stringValue
+                let body = JSON(["picture": newEntry.picture,
+                                 "edited": true,
+                                 "date": newEntry.date.iso8601])
+                database.update(id, rev: revision, document: body, callback: { _, document, error in
+                    guard let document = document else {
+                        return callback(nil, error)
+                    }
+                    let id = document["id"].stringValue
+                    let edited = document["doc"]["edited"].boolValue
+                    let picture = document["doc"]["picture"].stringValue
+                    guard let date = document["doc"]["date"].dateTime else {
+                        return callback(nil, error)
+                    }
+                    if let entry = EntityModel(id: id, picture: picture, date: date, edited: edited) {
+                        return callback(entry, nil)
+                    } else {
+                        return callback(nil, error)
+                    }
+                })
+            }
+            
         }
     }
 }

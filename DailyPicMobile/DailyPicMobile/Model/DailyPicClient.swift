@@ -12,6 +12,7 @@ enum DailyPicClientError: Error {
     case couldNotLoadModels
     case couldNotAdd(EntityModel)
     case couldNotDelete(EntityModel)
+    case couldNotEdit(EntityModel)
     case couldNotCreateClient
 }
 
@@ -69,6 +70,25 @@ class DailyPicClient {
                     return completion(DailyPicClientError.couldNotDelete(model))
                 }
                 completion(nil)
+            }
+        }
+    }
+    
+    static func edit(model: EntityModel, completion: @escaping (_ model: EntityModel?, _ error: DailyPicClientError?) -> Void ) {
+        guard let client = KituraKit(baseURL: baseURL) else {
+            return completion(nil, DailyPicClientError.couldNotCreateClient)
+        }
+        guard let id = model.id else {
+            return completion(nil, DailyPicClientError.couldNotEdit(model))
+        }
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        client.put("/entries", identifier: id, data: model) { (updatedEntry: EntityModel?, error: Error?) in
+            DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                if let _ = error {
+                    return completion(nil, DailyPicClientError.couldNotAdd(model))
+                }
+                completion(updatedEntry, nil)
             }
         }
     }

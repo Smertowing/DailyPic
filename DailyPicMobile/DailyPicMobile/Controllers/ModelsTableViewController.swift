@@ -53,6 +53,8 @@ class ModelsTableViewController: UITableViewController {
             UIAlertController.showError(with: "Could not access models on server", on: self)
         case .couldNotCreateClient:
             UIAlertController.showError(with: "Could not create client for server transmission", on: self)
+        case .couldNotEdit(let model):
+            UIAlertController.showError(with: "Could not update model \(model.id ?? "")", on: self)
         }
     }
 }

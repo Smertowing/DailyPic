@@ -13,11 +13,11 @@ struct EntityModel: Codable {
     var date: Date
     var edited: Bool
     
-    init?(id: String?, picture: String, date: Date) {
+    init?(id: String?, picture: String, date: Date, edited: Bool) {
         self.id = id
         self.picture = picture
         self.date = date
-        self.edited = false
+        self.edited = edited
     }
 }
 

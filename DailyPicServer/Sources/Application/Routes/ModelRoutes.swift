@@ -18,6 +18,7 @@ func initializeModelRoutes(app: App) {
     app.router.get("/entries", handler: getAllEntries)
     app.router.post("/entries", handler: addEntry)
     app.router.delete("/entries", handler: deleteEntry)
+    app.router.put("/entries", handler: updateEntry)
     
     Log.info("Journal entry routes created")
 }
@@ -54,3 +55,11 @@ func deleteEntry(id: String, completion: @escaping (RequestError?) -> Void) {
     }
 }
 
+func updateEntry(id: String, with entry: EntityModel, completion: @escaping (EntityModel?, RequestError?) -> Void) {
+    guard let database = database else {
+        return completion(nil, .internalServerError)
+    }
+    EntityModel.Persistence.update(entryWith: id, with: entry, from: database) { updatedEntry, error in
+        return completion(updatedEntry, error as? RequestError)
+    }
+}
