@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DailyPicServer::Application"
-               BuildableName = "Application.framework"
-               BlueprintName = "Application"
+               BlueprintIdentifier = "DailyPicServer::DailyPicServer"
+               BuildableName = "DailyPicServer"
+               BlueprintName = "DailyPicServer"
                ReferencedContainer = "container:DailyPicServer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DailyPicServer::DailyPicServer"
-               BuildableName = "DailyPicServer"
-               BlueprintName = "DailyPicServer"
+               BlueprintIdentifier = "DailyPicServer::Application"
+               BuildableName = "Application.framework"
+               BlueprintName = "Application"
                ReferencedContainer = "container:DailyPicServer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -69,9 +69,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DailyPicServer::Application"
-            BuildableName = "Application.framework"
-            BlueprintName = "Application"
+            BlueprintIdentifier = "DailyPicServer::DailyPicServer"
+            BuildableName = "DailyPicServer"
+            BlueprintName = "DailyPicServer"
             ReferencedContainer = "container:DailyPicServer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
