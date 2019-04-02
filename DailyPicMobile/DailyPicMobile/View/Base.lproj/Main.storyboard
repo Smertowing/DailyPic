@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mji-ZR-OMc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mji-ZR-OMc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,7 +50,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFG-gb-Ltk">
-                                            <rect key="frame" x="16" y="11" width="343" height="25"/>
+                                            <rect key="frame" x="16" y="11" width="295" height="25"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="25" id="gUH-5b-8IC"/>
                                             </constraints>
@@ -65,6 +65,15 @@
                                                 <constraint firstAttribute="height" constant="20" id="syz-mv-UFo"/>
                                             </constraints>
                                         </view>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="edited" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzJ-Eq-1rv">
+                                            <rect key="frame" x="310.5" y="11" width="48.5" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="Cmv-vU-T1g"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="VlV-T0-sw3" firstAttribute="top" secondItem="RFG-gb-Ltk" secondAttribute="bottom" constant="-1" id="48X-oe-FTs"/>
@@ -75,9 +84,11 @@
                                         <constraint firstItem="z8t-XF-oOE" firstAttribute="leading" secondItem="FAD-sm-bFC" secondAttribute="leadingMargin" constant="24" id="L2d-k3-4y3"/>
                                         <constraint firstItem="ROa-Q1-F1D" firstAttribute="top" secondItem="VlV-T0-sw3" secondAttribute="bottom" constant="8" id="NIt-0s-sZm"/>
                                         <constraint firstItem="ieH-DY-2rG" firstAttribute="trailing" secondItem="FAD-sm-bFC" secondAttribute="trailingMargin" id="Y8T-jq-bxk"/>
+                                        <constraint firstItem="HzJ-Eq-1rv" firstAttribute="trailing" secondItem="FAD-sm-bFC" secondAttribute="trailingMargin" id="ZNf-2G-qoz"/>
                                         <constraint firstItem="ieH-DY-2rG" firstAttribute="leading" secondItem="FAD-sm-bFC" secondAttribute="leadingMargin" id="aTZ-Sl-bVZ"/>
-                                        <constraint firstItem="RFG-gb-Ltk" firstAttribute="trailing" secondItem="FAD-sm-bFC" secondAttribute="trailingMargin" id="fho-J0-22Y"/>
+                                        <constraint firstItem="RFG-gb-Ltk" firstAttribute="trailing" secondItem="FAD-sm-bFC" secondAttribute="trailingMargin" constant="-48" id="fho-J0-22Y"/>
                                         <constraint firstItem="RFG-gb-Ltk" firstAttribute="top" secondItem="FAD-sm-bFC" secondAttribute="topMargin" id="gbF-X3-OHs"/>
+                                        <constraint firstItem="HzJ-Eq-1rv" firstAttribute="top" secondItem="FAD-sm-bFC" secondAttribute="topMargin" id="pWn-xG-b2d"/>
                                         <constraint firstItem="VlV-T0-sw3" firstAttribute="trailing" secondItem="FAD-sm-bFC" secondAttribute="trailingMargin" id="pwA-aw-IKp"/>
                                         <constraint firstItem="VlV-T0-sw3" firstAttribute="leading" secondItem="FAD-sm-bFC" secondAttribute="leadingMargin" id="r5a-Jq-bye"/>
                                         <constraint firstItem="ROa-Q1-F1D" firstAttribute="leading" secondItem="FAD-sm-bFC" secondAttribute="leadingMargin" id="rkg-Pn-3WF"/>
@@ -87,6 +98,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="dateLabel" destination="RFG-gb-Ltk" id="8CX-f3-HLf"/>
+                                    <outlet property="editedLabel" destination="HzJ-Eq-1rv" id="92m-kU-BPF"/>
                                     <outlet property="entityImageView" destination="z8t-XF-oOE" id="fL4-e3-e60"/>
                                     <outlet property="timeLabel" destination="VlV-T0-sw3" id="XhJ-8a-9C5"/>
                                 </connections>

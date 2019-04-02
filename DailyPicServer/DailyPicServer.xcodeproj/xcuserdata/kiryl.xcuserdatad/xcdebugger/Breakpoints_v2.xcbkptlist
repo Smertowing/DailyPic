@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/Application/Routes/ModelRoutes.swift"
-            timestampString = "575537459.831295"
+            timestampString = "575898428.358958"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -287,6 +287,390 @@
                   startingLineNumber = "51"
                   endingLineNumber = "51"
                   offsetFromSymbolStart = "83">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Application/Routes/ModelRoutes.swift"
+            timestampString = "575898428.359158"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "updateEntry(id:with:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;DailyPicServer.EntityModel&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in DailyPicServer.updateEntry(id: Swift.String, with: DailyPicServer.EntityModel, completion: (Swift.Optional&lt;DailyPicServer.EntityModel&gt;, Swift.Optional&lt;KituraContracts.RequestError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DailyPicServer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Routes/ModelRoutes.swift"
+                  timestampString = "575897290.255803"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Application.EntityModel&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in Application.updateEntry(id: Swift.String, with: Application.EntityModel, completion: (Swift.Optional&lt;Application.EntityModel&gt;, Swift.Optional&lt;KituraContracts.RequestError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Routes/ModelRoutes.swift"
+                  timestampString = "575897290.472325"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Application/Routes/ModelRoutes.swift"
+            timestampString = "575898428.359223"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "updateEntry(id:with:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DailyPicServer.updateEntry(id: Swift.String, with: DailyPicServer.EntityModel, completion: (Swift.Optional&lt;DailyPicServer.EntityModel&gt;, Swift.Optional&lt;KituraContracts.RequestError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DailyPicServer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Routes/ModelRoutes.swift"
+                  timestampString = "575896508.59356"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "573">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Application.updateEntry(id: Swift.String, with: Application.EntityModel, completion: (Swift.Optional&lt;Application.EntityModel&gt;, Swift.Optional&lt;KituraContracts.RequestError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Routes/ModelRoutes.swift"
+                  timestampString = "575896508.95512"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "573">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Application/Routes/ModelRoutes.swift"
+            timestampString = "575898428.359278"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "updateEntry(id:with:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DailyPicServer.updateEntry(id: Swift.String, with: DailyPicServer.EntityModel, completion: (Swift.Optional&lt;DailyPicServer.EntityModel&gt;, Swift.Optional&lt;KituraContracts.RequestError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DailyPicServer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Routes/ModelRoutes.swift"
+                  timestampString = "575897290.261426"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "210">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Application.updateEntry(id: Swift.String, with: Application.EntityModel, completion: (Swift.Optional&lt;Application.EntityModel&gt;, Swift.Optional&lt;KituraContracts.RequestError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Routes/ModelRoutes.swift"
+                  timestampString = "575897290.476815"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "210">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Application/Models/ModelPersistence.swift"
+            timestampString = "575898428.3593301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "update(entryWith:with:from:callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;SwiftyJSON.JSON&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in static DailyPicServer.EntityModel.Persistence.update(entryWith: Swift.String, with: DailyPicServer.EntityModel, from: CouchDB.Database, callback: (Swift.Optional&lt;DailyPicServer.EntityModel&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DailyPicServer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/ModelPersistence.swift"
+                  timestampString = "575898084.032909"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "199">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;SwiftyJSON.JSON&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in static Application.EntityModel.Persistence.update(entryWith: Swift.String, with: Application.EntityModel, from: CouchDB.Database, callback: (Swift.Optional&lt;Application.EntityModel&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/ModelPersistence.swift"
+                  timestampString = "575898084.288481"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "199">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Application/Models/Extensions.swift"
+            timestampString = "575898428.359785"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "dateTime"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in DailyPicServer):SwiftyJSON.JSON.dateTime.getter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "DailyPicServer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/Extensions.swift"
+                  timestampString = "575897456.0422519"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Application):SwiftyJSON.JSON.dateTime.getter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/Extensions.swift"
+                  timestampString = "575897456.044548"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Application/Models/Extensions.swift"
+            timestampString = "575898428.3598419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "dateTime"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in DailyPicServer):SwiftyJSON.JSON.dateTime.getter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "DailyPicServer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/Extensions.swift"
+                  timestampString = "575897508.24123"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "579">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in Application):SwiftyJSON.JSON.dateTime.getter : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/Extensions.swift"
+                  timestampString = "575897508.2441159"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "579">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Application/Models/ModelPersistence.swift"
+            timestampString = "575898428.359901"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "update(entryWith:with:from:callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in static DailyPicServer.EntityModel.Persistence.update(entryWith: Swift.String, with: DailyPicServer.EntityModel, from: CouchDB.Database, callback: (Swift.Optional&lt;DailyPicServer.EntityModel&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DailyPicServer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/ModelPersistence.swift"
+                  timestampString = "575897743.272717"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "888">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in static Application.EntityModel.Persistence.update(entryWith: Swift.String, with: Application.EntityModel, from: CouchDB.Database, callback: (Swift.Optional&lt;Application.EntityModel&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/ModelPersistence.swift"
+                  timestampString = "575897743.712671"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "888">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/Application/Models/ModelPersistence.swift"
+            timestampString = "575898428.3602149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "get(from:with:callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in static DailyPicServer.EntityModel.Persistence.get(from: CouchDB.Database, with: Swift.String, callback: (Swift.Optional&lt;DailyPicServer.EntityModel&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DailyPicServer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/ModelPersistence.swift"
+                  timestampString = "575897907.7348469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "896">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; () in static Application.EntityModel.Persistence.get(from: CouchDB.Database, with: Swift.String, callback: (Swift.Optional&lt;Application.EntityModel&gt;, Swift.Optional&lt;__C.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicServer/Sources/Application/Models/ModelPersistence.swift"
+                  timestampString = "575897907.737434"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "896">
                </Location>
             </Locations>
          </BreakpointContent>

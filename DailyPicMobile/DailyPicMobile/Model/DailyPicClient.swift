@@ -86,7 +86,7 @@ class DailyPicClient {
             DispatchQueue.main.async {
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
                 if let _ = error {
-                    return completion(nil, DailyPicClientError.couldNotAdd(model))
+                    return completion(nil, DailyPicClientError.couldNotEdit(model))
                 }
                 completion(updatedEntry, nil)
             }

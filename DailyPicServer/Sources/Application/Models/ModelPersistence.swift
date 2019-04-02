@@ -93,20 +93,13 @@ extension EntityModel {
                                  "edited": true,
                                  "date": newEntry.date.iso8601])
                 database.update(id, rev: revision, document: body, callback: { _, document, error in
-                    guard let document = document else {
+                    
+                    if let error = error {
                         return callback(nil, error)
-                    }
-                    let id = document["id"].stringValue
-                    let edited = document["doc"]["edited"].boolValue
-                    let picture = document["doc"]["picture"].stringValue
-                    guard let date = document["doc"]["date"].dateTime else {
-                        return callback(nil, error)
-                    }
-                    if let entry = EntityModel(id: id, picture: picture, date: date, edited: edited) {
-                        return callback(entry, nil)
                     } else {
-                        return callback(nil, error)
+                        return callback(newEntry, nil)
                     }
+                
                 })
             }
             

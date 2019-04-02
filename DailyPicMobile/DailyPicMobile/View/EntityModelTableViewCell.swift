@@ -12,6 +12,7 @@ class EntityModelTableViewCell: UITableViewCell {
     @IBOutlet weak var entityImageView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var editedLabel: UILabel!
     
     override func layoutSubviews() {
         dateLabel.layer.shadowOffset = CGSize(width: 0, height: 0)
@@ -23,4 +24,6 @@ class EntityModelTableViewCell: UITableViewCell {
     }
     
     static var cellIdentifier = "EntityModelCell"
+    
+    
 }
