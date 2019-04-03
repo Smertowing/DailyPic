@@ -15,6 +15,7 @@ class ModelsTableViewController: UITableViewController {
     private var editEntityIndexPath: IndexPath?
     
     override func viewDidAppear(_ animated: Bool) {
+        title = "\(UserProfile.username)'s Journal"
         loadEntityModels()
     }
     
@@ -75,6 +76,8 @@ extension ModelsTableViewController {
         cell.timeLabel.text = entity.date.displayTime
         if entity.edited {
             cell.editedLabel.isHidden = false
+        } else {
+            cell.editedLabel.isHidden = true
         }
         if let imageData = Data(base64Encoded: entity.picture) {
             cell.entityImageView.image = UIImage(data: imageData)
