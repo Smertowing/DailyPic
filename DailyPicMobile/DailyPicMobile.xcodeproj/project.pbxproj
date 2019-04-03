@@ -15,6 +15,8 @@
 		F3CF54C82247A99800DA16E4 /* ModelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54C72247A99800DA16E4 /* ModelsTableViewController.swift */; };
 		F3CF54CA2247AAC900DA16E4 /* AddEntityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54C92247AAC900DA16E4 /* AddEntityViewController.swift */; };
 		F3CF54CC2247AB1800DA16E4 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF54CB2247AB1800DA16E4 /* UIKitExtensions.swift */; };
+		F3EF0736225470A00030FD08 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF0735225470A00030FD08 /* UserProfile.swift */; };
+		F3EF0738225472AF0030FD08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF0737225472AF0030FD08 /* LoginViewController.swift */; };
 		F3FCE97E22478AE1006C213B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCE97D22478AE1006C213B /* AppDelegate.swift */; };
 		F3FCE98322478AE1006C213B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FCE98122478AE1006C213B /* Main.storyboard */; };
 		F3FCE98522478AE3006C213B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FCE98422478AE3006C213B /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		F3CF54C72247A99800DA16E4 /* ModelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTableViewController.swift; sourceTree = "<group>"; };
 		F3CF54C92247AAC900DA16E4 /* AddEntityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntityViewController.swift; sourceTree = "<group>"; };
 		F3CF54CB2247AB1800DA16E4 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		F3EF0735225470A00030FD08 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		F3EF0737225472AF0030FD08 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F3FCE97A22478AE1006C213B /* DailyPicMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPicMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FCE97D22478AE1006C213B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FCE98222478AE1006C213B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				F3FCE97D22478AE1006C213B /* AppDelegate.swift */,
 				F3CF54C72247A99800DA16E4 /* ModelsTableViewController.swift */,
 				F3CF54C92247AAC900DA16E4 /* AddEntityViewController.swift */,
+				F3EF0737225472AF0030FD08 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			children = (
 				F3CF54BE22478EEF00DA16E4 /* EntityModel.swift */,
 				F3CF54C322478FDC00DA16E4 /* DailyPicClient.swift */,
+				F3EF0735225470A00030FD08 /* UserProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +287,8 @@
 				F3FCE97E22478AE1006C213B /* AppDelegate.swift in Sources */,
 				F3CF54CA2247AAC900DA16E4 /* AddEntityViewController.swift in Sources */,
 				F3CF54C82247A99800DA16E4 /* ModelsTableViewController.swift in Sources */,
+				F3EF0738225472AF0030FD08 /* LoginViewController.swift in Sources */,
+				F3EF0736225470A00030FD08 /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +447,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,7 +468,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

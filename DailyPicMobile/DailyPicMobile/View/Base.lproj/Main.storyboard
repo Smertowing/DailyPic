@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--DailyPic-->
+        <!--My Journal-->
         <scene sceneID="bfv-6o-aa0">
             <objects>
                 <tableViewController id="VU5-s3-ldh" customClass="ModelsTableViewController" customModule="DailyPicMobile" customModuleProvider="target" sceneMemberID="viewController">
@@ -109,7 +109,7 @@
                             <outlet property="delegate" destination="VU5-s3-ldh" id="H2Q-Od-GCY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="DailyPic" id="W4S-iN-Moj">
+                    <navigationItem key="navigationItem" title="My Journal" id="W4S-iN-Moj">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="lux-qD-Ah5">
                                 <connections>
@@ -209,12 +209,80 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="VU5-s3-ldh" kind="relationship" relationship="rootViewController" id="wdt-vn-72n"/>
+                        <segue destination="FrH-tX-aj6" kind="relationship" relationship="rootViewController" id="Lza-Zc-TjL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zrf-hP-BFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="587.20000000000005" y="205.09745127436284"/>
+            <point key="canvasLocation" x="-158" y="205"/>
+        </scene>
+        <!--DailyPic-->
+        <scene sceneID="fN0-J6-TZ5">
+            <objects>
+                <viewController id="FrH-tX-aj6" customClass="LoginViewController" customModule="DailyPicMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xIb-bD-4t2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kitty" translatesAutoresizingMaskIntoConstraints="NO" id="HjE-i6-3Ub">
+                                <rect key="frame" x="64" y="127" width="247" height="123.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HjE-i6-3Ub" secondAttribute="height" multiplier="2:1" id="eX0-5G-sdO"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="server ip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cot-mv-Zje">
+                                <rect key="frame" x="60" y="266.5" width="255" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="your nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHD-Fn-KER">
+                                <rect key="frame" x="60" y="312.5" width="255" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P8-xi-4iD">
+                                <rect key="frame" x="60" y="358.5" width="255" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="FrH-tX-aj6" eventType="touchUpInside" id="Wzk-NR-bFq"/>
+                                    <segue destination="VU5-s3-ldh" kind="show" id="33b-OP-SFw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="30d-1d-S4b" firstAttribute="trailing" secondItem="Cot-mv-Zje" secondAttribute="trailing" constant="60" id="Cic-Yy-xVm"/>
+                            <constraint firstItem="30d-1d-S4b" firstAttribute="trailing" secondItem="8P8-xi-4iD" secondAttribute="trailing" constant="60" id="IbY-xA-YGW"/>
+                            <constraint firstItem="8P8-xi-4iD" firstAttribute="leading" secondItem="30d-1d-S4b" secondAttribute="leading" constant="60" id="JpG-Nj-njk"/>
+                            <constraint firstItem="Cot-mv-Zje" firstAttribute="leading" secondItem="30d-1d-S4b" secondAttribute="leading" constant="60" id="LGC-1J-2hS"/>
+                            <constraint firstItem="dHD-Fn-KER" firstAttribute="top" secondItem="Cot-mv-Zje" secondAttribute="bottom" constant="16" id="NpZ-5p-crD"/>
+                            <constraint firstItem="HjE-i6-3Ub" firstAttribute="centerX" secondItem="xIb-bD-4t2" secondAttribute="centerX" id="ROK-DT-kog"/>
+                            <constraint firstItem="30d-1d-S4b" firstAttribute="trailing" secondItem="HjE-i6-3Ub" secondAttribute="trailing" constant="64" id="Yjn-wL-Fr3"/>
+                            <constraint firstItem="dHD-Fn-KER" firstAttribute="leading" secondItem="30d-1d-S4b" secondAttribute="leading" constant="60" id="c8X-iG-Vt0"/>
+                            <constraint firstItem="Cot-mv-Zje" firstAttribute="top" secondItem="HjE-i6-3Ub" secondAttribute="bottom" constant="16" id="fx3-fb-tKw"/>
+                            <constraint firstItem="30d-1d-S4b" firstAttribute="trailing" secondItem="dHD-Fn-KER" secondAttribute="trailing" constant="60" id="iL2-Xh-c3I"/>
+                            <constraint firstItem="8P8-xi-4iD" firstAttribute="centerY" secondItem="xIb-bD-4t2" secondAttribute="centerY" constant="40" id="nZ3-YF-6VL"/>
+                            <constraint firstItem="8P8-xi-4iD" firstAttribute="top" secondItem="dHD-Fn-KER" secondAttribute="bottom" constant="16" id="ti1-OX-dif"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="30d-1d-S4b"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="DailyPic" id="7D3-kg-1GE"/>
+                    <connections>
+                        <outlet property="nicknameTextField" destination="dHD-Fn-KER" id="fCj-p9-JOb"/>
+                        <outlet property="serveripTextField" destination="Cot-mv-Zje" id="kBJ-et-825"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4M-Yh-1MO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="205"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Kitty" width="440" height="440"/>
+    </resources>
 </document>

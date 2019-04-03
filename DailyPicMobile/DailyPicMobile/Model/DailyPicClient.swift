@@ -18,7 +18,7 @@ enum DailyPicClientError: Error {
 
 class DailyPicClient {
     private static var baseURL: String {
-        return "http://172.20.10.5:8080"
+        return "http://" + UserProfile.serverIp + ":8080"
     }
     
     static func getAll(completion: @escaping (_ models: [EntityModel]?, _ error: DailyPicClientError?) -> Void) {
