@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var nicknameTextField: UITextField!
     
     @IBAction func loginAction(_ sender: Any) {
-        
+        resignFirstResponder()
         guard let serverip = serveripTextField.text else {
             UIAlertController.showError(with: "Server ip field is empty", on: self)
             return
@@ -33,13 +33,23 @@ class LoginViewController: UIViewController {
         
         UserProfile.serverIp = serverip
         UserProfile.username = nickname
+
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        DailyPicClient.ping() { error in
+            DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                if let _ = error {
+                    UIAlertController.showError(with: "Cannot reach server", on: self)
+                } else {
+                    let exclusiveViewController = self.storyboard?.instantiateViewController(withIdentifier: "modelsTableView") as! ModelsTableViewController
+                    self.show(exclusiveViewController, sender: self)
+                }
+            }
+        }
+        
         
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+
 
 
 }

@@ -13,7 +13,7 @@
         <!--My Journal-->
         <scene sceneID="bfv-6o-aa0">
             <objects>
-                <tableViewController id="VU5-s3-ldh" customClass="ModelsTableViewController" customModule="DailyPicMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="modelsTableView" id="VU5-s3-ldh" customClass="ModelsTableViewController" customModule="DailyPicMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QX1-QI-PUJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
                                                 <constraint firstAttribute="height" constant="25" id="Cmv-vU-T1g"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -137,7 +137,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which pic describe you today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="HQG-yg-pkJ">
-                                <rect key="frame" x="16" y="82" width="343" height="49"/>
+                                <rect key="frame" x="16" y="38" width="343" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="LEX-5u-Wps"/>
                                 </constraints>
@@ -146,7 +146,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJE-up-OcO">
-                                <rect key="frame" x="40" y="183" width="295" height="295"/>
+                                <rect key="frame" x="40" y="139" width="295" height="295"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tfF-y4-hym">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="295"/>
@@ -250,7 +250,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="FrH-tX-aj6" eventType="touchUpInside" id="Wzk-NR-bFq"/>
-                                    <segue destination="VU5-s3-ldh" kind="show" id="33b-OP-SFw"/>
                                 </connections>
                             </button>
                         </subviews>

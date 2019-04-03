@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.260576"
+            timestampString = "575970261.23248"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.260643"
+            timestampString = "575970261.232556"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -41,110 +41,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
-            timestampString = "575960414.260695"
+            filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
+            timestampString = "575970261.2326109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "getAll(completion:)"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static DailyPicMobile.DailyPicClient.getAll(completion: (Swift.Optional&lt;Swift.Array&lt;DailyPicMobile.EntityModel&gt;&gt;, Swift.Optional&lt;DailyPicMobile.DailyPicClientError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "DailyPicMobile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Model/DailyPicClient.swift"
-                  timestampString = "575140714.359304"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "292">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;DailyPicMobile.EntityModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static DailyPicMobile.DailyPicClient.getAll(completion: (Swift.Optional&lt;Swift.Array&lt;DailyPicMobile.EntityModel&gt;&gt;, Swift.Optional&lt;DailyPicMobile.DailyPicClientError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "DailyPicMobile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Model/DailyPicClient.swift"
-                  timestampString = "575140714.361424"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
-            timestampString = "575960414.260741"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "getAll(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
-            timestampString = "575960414.260783"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "getAll(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;DailyPicMobile.EntityModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static DailyPicMobile.DailyPicClient.getAll(completion: (Swift.Optional&lt;Swift.Array&lt;DailyPicMobile.EntityModel&gt;&gt;, Swift.Optional&lt;DailyPicMobile.DailyPicClientError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "DailyPicMobile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Model/DailyPicClient.swift"
-                  timestampString = "575140714.4753931"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;DailyPicMobile.EntityModel&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static DailyPicMobile.DailyPicClient.getAll(completion: (Swift.Optional&lt;Swift.Array&lt;DailyPicMobile.EntityModel&gt;&gt;, Swift.Optional&lt;DailyPicMobile.DailyPicClientError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "DailyPicMobile"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Model/DailyPicClient.swift"
-                  timestampString = "575140714.477409"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -154,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.260823"
+            timestampString = "575970261.2326601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -169,28 +73,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
-            timestampString = "575960414.260864"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "getAll(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.260905"
+            timestampString = "575970261.232704"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,27 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.260947"
+            timestampString = "575970261.2327501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.260988"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "tableView(_:editActionsForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -266,7 +138,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.26103"
+            timestampString = "575970261.232797"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "editEntryHandler(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
+            timestampString = "575970261.232842"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "209"
@@ -282,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.261072"
+            timestampString = "575970261.232887"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "editEntryHandler(action:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.261113"
+            timestampString = "575970261.232933"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "editEntryHandler(action:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -314,60 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.261155"
+            timestampString = "575970261.2329791"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "editEntryHandler(action:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
-            timestampString = "575960414.261196"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
-            landmarkName = "editEntryHandler(action:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
-            timestampString = "575960414.261235"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "edit(model:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
-            timestampString = "575960414.261277"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "edit(model:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -385,6 +225,278 @@
             endingLineNumber = "21"
             landmarkName = "AppDelegate"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
+            timestampString = "575970261.233058"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "loadEntityModels()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DailyPicMobile.ModelsTableViewController.(loadEntityModels in _0D2CA7D95466220FCC16DB6AD896FE7D)() -&gt; ()"
+                  moduleName = "DailyPicMobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Controllers/ModelsTableViewController.swift"
+                  timestampString = "575967043.565203"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;DailyPicMobile.EntityModel&gt;&gt;, Swift.Optional&lt;DailyPicMobile.DailyPicClientError&gt;) -&gt; () in DailyPicMobile.ModelsTableViewController.(loadEntityModels in _0D2CA7D95466220FCC16DB6AD896FE7D)() -&gt; ()"
+                  moduleName = "DailyPicMobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Controllers/ModelsTableViewController.swift"
+                  timestampString = "575967043.570586"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
+            timestampString = "575970261.233104"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "loadEntityModels()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Controllers/ModelsTableViewController.swift"
+            timestampString = "575970261.2331491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "loadEntityModels()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
+            timestampString = "575970261.233285"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "getAll(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Controllers/LoginViewController.swift"
+            timestampString = "575970261.233371"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "loginAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
+            timestampString = "575970261.233451"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "ping(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Controllers/LoginViewController.swift"
+            timestampString = "575970261.233528"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "loginAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;DailyPicMobile.DailyPicClientError&gt;) -&gt; () in DailyPicMobile.LoginViewController.loginAction(Any) -&gt; ()"
+                  moduleName = "DailyPicMobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Controllers/LoginViewController.swift"
+                  timestampString = "575969127.364406"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;DailyPicMobile.DailyPicClientError&gt;) -&gt; () in DailyPicMobile.LoginViewController.loginAction(Any) -&gt; ()"
+                  moduleName = "DailyPicMobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Controllers/LoginViewController.swift"
+                  timestampString = "575969127.367053"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
+            timestampString = "575970261.233602"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "ping(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static DailyPicMobile.DailyPicClient.ping(completion: (Swift.Optional&lt;DailyPicMobile.DailyPicClientError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DailyPicMobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Model/DailyPicClient.swift"
+                  timestampString = "575969127.373889"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "628">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static DailyPicMobile.DailyPicClient.ping(completion: (Swift.Optional&lt;DailyPicMobile.DailyPicClientError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DailyPicMobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiryl/Documents/Study/CSAN/DailyPic/DailyPicMobile/DailyPicMobile/Model/DailyPicClient.swift"
+                  timestampString = "575969127.376491"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
+            timestampString = "575970261.233673"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "ping(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Model/DailyPicClient.swift"
+            timestampString = "575970261.233745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "ping(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyPicMobile/Controllers/LoginViewController.swift"
+            timestampString = "575970261.233813"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "loginAction(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

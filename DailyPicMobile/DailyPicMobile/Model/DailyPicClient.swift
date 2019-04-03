@@ -14,11 +14,40 @@ enum DailyPicClientError: Error {
     case couldNotDelete(EntityModel)
     case couldNotEdit(EntityModel)
     case couldNotCreateClient
+    case couldNotReachServer
 }
 
 class DailyPicClient {
+    
     private static var baseURL: String {
         return "http://" + UserProfile.serverIp + ":8080"
+    }
+    
+    static func ping(completion: @escaping (_ error: DailyPicClientError?) -> Void) {
+        
+        if let url = URL(string: baseURL) {
+            var request = URLRequest(url: url)
+            request.httpMethod = "HEAD"
+            
+            URLSession(configuration: .default)
+                .dataTask(with: request) { (_, response, error) -> Void in
+                    guard error == nil else {
+                        print("Error:", error ?? "")
+                        return completion(.couldNotReachServer)
+                    }
+                    
+                    guard (response as? HTTPURLResponse)?
+                        .statusCode == 200 else {
+                            print("down")
+                        return completion(.couldNotReachServer)
+                    }
+                    
+                    print("up")
+                    return completion(nil)
+                }
+                .resume()
+        }
+        
     }
     
     static func getAll(completion: @escaping (_ models: [EntityModel]?, _ error: DailyPicClientError?) -> Void) {

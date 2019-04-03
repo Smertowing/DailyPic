@@ -57,6 +57,8 @@ class ModelsTableViewController: UITableViewController {
             UIAlertController.showError(with: "Could not create client for server transmission", on: self)
         case .couldNotEdit(let model):
             UIAlertController.showError(with: "Could not update model \(model.id ?? "")", on: self)
+        case .couldNotReachServer:
+            UIAlertController.showError(with: "Could not reach server", on: self)
         }
     }
 }

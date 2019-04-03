@@ -30,9 +30,6 @@ extension EntityModel: Equatable {
 
 extension EntityModel {
     var backgroundColor: UIColor {
-        guard let substring = id?.suffix(6).uppercased() else {
-            return UIColor(hexString: "000000")
-        }
-        return UIColor(hexString: substring)
+        return UIColor(hexString: String(Int.random(in: 0..<1000000)))
     }
 }
