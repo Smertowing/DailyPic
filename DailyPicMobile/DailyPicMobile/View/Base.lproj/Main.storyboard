@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Journal-->
+        <!--DailyPic-->
         <scene sceneID="bfv-6o-aa0">
             <objects>
                 <tableViewController storyboardIdentifier="modelsTableView" id="VU5-s3-ldh" customClass="ModelsTableViewController" customModule="DailyPicMobile" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,6 +82,7 @@
                                         <constraint firstItem="z8t-XF-oOE" firstAttribute="centerX" secondItem="FAD-sm-bFC" secondAttribute="centerX" id="DOp-uY-dP5"/>
                                         <constraint firstItem="ROa-Q1-F1D" firstAttribute="trailing" secondItem="FAD-sm-bFC" secondAttribute="trailingMargin" id="HuI-4b-CZr"/>
                                         <constraint firstItem="z8t-XF-oOE" firstAttribute="leading" secondItem="FAD-sm-bFC" secondAttribute="leadingMargin" constant="24" id="L2d-k3-4y3"/>
+                                        <constraint firstItem="HzJ-Eq-1rv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FAD-sm-bFC" secondAttribute="leading" constant="8" id="Mg7-Uo-2hR"/>
                                         <constraint firstItem="ROa-Q1-F1D" firstAttribute="top" secondItem="VlV-T0-sw3" secondAttribute="bottom" constant="8" id="NIt-0s-sZm"/>
                                         <constraint firstItem="ieH-DY-2rG" firstAttribute="trailing" secondItem="FAD-sm-bFC" secondAttribute="trailingMargin" id="Y8T-jq-bxk"/>
                                         <constraint firstItem="HzJ-Eq-1rv" firstAttribute="trailing" secondItem="FAD-sm-bFC" secondAttribute="trailingMargin" id="ZNf-2G-qoz"/>
@@ -109,7 +110,12 @@
                             <outlet property="delegate" destination="VU5-s3-ldh" id="H2Q-Od-GCY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Journal" id="W4S-iN-Moj">
+                    <navigationItem key="navigationItem" title="DailyPic" id="W4S-iN-Moj">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="e1C-oD-r3P">
+                            <connections>
+                                <action selector="action" destination="VU5-s3-ldh" id="XbA-kr-Fxr"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="lux-qD-Ah5">
                                 <connections>
@@ -137,7 +143,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which pic describe you today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="HQG-yg-pkJ">
-                                <rect key="frame" x="16" y="38" width="343" height="49"/>
+                                <rect key="frame" x="16" y="82" width="343" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="LEX-5u-Wps"/>
                                 </constraints>
@@ -146,7 +152,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJE-up-OcO">
-                                <rect key="frame" x="40" y="139" width="295" height="295"/>
+                                <rect key="frame" x="40" y="183" width="295" height="295"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tfF-y4-hym">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="295"/>
@@ -209,7 +215,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="FrH-tX-aj6" kind="relationship" relationship="rootViewController" id="Lza-Zc-TjL"/>
+                        <segue destination="VU5-s3-ldh" kind="relationship" relationship="rootViewController" id="gf0-iW-Bzl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zrf-hP-BFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -285,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4M-Yh-1MO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="205"/>
+            <point key="canvasLocation" x="-159" y="906"/>
         </scene>
     </scenes>
     <resources>

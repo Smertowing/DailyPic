@@ -10,7 +10,7 @@ import Foundation
 
 class UserProfile {
     
-    static var serverIp: String = "172.20.10.5"
+    static var serverIp: String = ""
     
     static var username: String = ""
     

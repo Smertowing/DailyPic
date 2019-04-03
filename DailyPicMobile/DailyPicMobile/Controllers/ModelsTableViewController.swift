@@ -15,12 +15,18 @@ class ModelsTableViewController: UITableViewController {
     private var editEntityIndexPath: IndexPath?
     
     override func viewDidAppear(_ animated: Bool) {
-        title = "\(UserProfile.username)'s Journal"
-        loadEntityModels()
+        super.viewDidAppear(animated)
+        //title = "\(UserProfile.username)'s Journal"
+        //loadEntityModels()
+        loginServer()
     }
     
     @IBAction func refresh() {
         loadEntityModels()
+    }
+    
+    @IBAction func action() {
+        confirmExit()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -47,19 +53,42 @@ class ModelsTableViewController: UITableViewController {
     }
     
     fileprivate func handleError(_ error: DailyPicClientError) {
-        switch error {
-        case .couldNotAdd(let model):
-            UIAlertController.showError(with: "Could not add model \(model.id ?? "")", on: self)
-        case .couldNotDelete(let model):
-            UIAlertController.showError(with: "Could not delete model with id: \(model.id ?? "")", on: self)
-        case .couldNotLoadModels:
-            UIAlertController.showError(with: "Could not access models on server", on: self)
-        case .couldNotCreateClient:
-            UIAlertController.showError(with: "Could not create client for server transmission", on: self)
-        case .couldNotEdit(let model):
-            UIAlertController.showError(with: "Could not update model \(model.id ?? "")", on: self)
-        case .couldNotReachServer:
-            UIAlertController.showError(with: "Could not reach server", on: self)
+        DailyPicClient.ping() { error2 in
+            DispatchQueue.main.async {
+                if let _ = error2 {
+                    switch error {
+                    case .couldNotAdd(let model):
+                        self.getNewIp(with: "Could not add model \(model.id ?? "")", on: self)
+                    case .couldNotDelete(let model):
+                        self.getNewIp(with: "Could not delete model with id: \(model.id ?? "")", on: self)
+                        
+                    case .couldNotLoadModels:
+                        self.getNewIp(with: "Could not access models on server", on: self)
+                    case .couldNotCreateClient:
+                        self.getNewIp(with: "Could not create client for server transmission", on: self)
+                    case .couldNotEdit(let model):
+                        self.getNewIp(with: "Could not update model \(model.id ?? "")", on: self)
+                    case .couldNotReachServer:
+                        self.getNewIp(with: "Could not reach server", on: self)
+                    }
+                } else {
+                    switch error {
+                    case .couldNotAdd(let model):
+                        UIAlertController.showError(with: "Could not add model \(model.id ?? "")", on: self)
+                    case .couldNotDelete(let model):
+                        UIAlertController.showError(with: "Could not delete model with id: \(model.id ?? "")", on: self)
+                        
+                    case .couldNotLoadModels:
+                        UIAlertController.showError(with: "Could not access models on server", on: self)
+                    case .couldNotCreateClient:
+                        UIAlertController.showError(with: "Could not create client for server transmission", on: self)
+                    case .couldNotEdit(let model):
+                        UIAlertController.showError(with: "Could not update model \(model.id ?? "")", on: self)
+                    case .couldNotReachServer:
+                        UIAlertController.showError(with: "Could not reach server", on: self)
+                    }
+                }
+            }
         }
     }
 }
@@ -233,3 +262,56 @@ extension ModelsTableViewController {
     }
 }
 
+extension ModelsTableViewController {
+    
+    func loginServer() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        DailyPicClient.ping() { error in
+            DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                if let _ = error {
+                    self.getNewIp(with: "Set server ip required", on: self)
+                } else {
+                    self.loadEntityModels()
+                }
+            }
+        }
+    }
+    
+    func getNewIp(with message: String, on controller: UIViewController) {
+        let alertController = UIAlertController(title: "Server connection failed",
+                                                message: message,
+                                                preferredStyle: .alert)
+        alertController.addTextField(
+            configurationHandler: {(textField: UITextField!) in
+                textField.placeholder = "Enter new ip"
+        })
+        let action = UIAlertAction(title: "Submit",
+                                   style: UIAlertAction.Style.default,
+                                   handler: {[alertController]
+                                    (paramAction:UIAlertAction!) in
+                                    if let textFields = alertController.textFields{
+                                        let theTextFields = textFields as [UITextField]
+                                        let enteredText = theTextFields[0].text
+                                        UserProfile.serverIp = enteredText ?? ""
+                                        self.loginServer()
+                                    }
+        })
+        alertController.addAction(action)
+        controller.present(alertController,
+                           animated: true,
+                           completion: nil)
+    }
+    
+    func confirmExit() {
+        let alert = UIAlertController(title: "Exit", message: "Are you sure you want to exit current server?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: loginHandler))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func loginHandler(action: UIAlertAction) {
+        getNewIp(with: "Set server ip required", on: self)
+    }
+    
+}

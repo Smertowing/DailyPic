@@ -17,7 +17,9 @@ public class App {
         Log.info("Running on MacOS - using local database")
         return ConnectionProperties(host: "localhost",
                                     port: 5984,
-                                    secured: false)
+                                    secured: false,
+                                    username: nil,
+                                    password: nil)   
     }
     var client: CouchDBClient?
     var database: Database?
