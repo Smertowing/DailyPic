@@ -48,6 +48,11 @@ class ModelsTableViewController: UITableViewController {
             } else {
                 strongSelf.entityModels = models!
                 strongSelf.tableView.reloadData()
+                DispatchQueue.main.async {
+                    if !strongSelf.entityModels.isEmpty {
+                        strongSelf.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .bottom, animated: true)
+                    }
+                }
             }
         }
     }
